@@ -18,10 +18,10 @@
                     <div class="footer-link mt-45">
                         <h4 class="footer-title">{{__('Випускові кафедри')}}</h4>
                         <ul class="link-list">
-                            <li><a href="our-courses-left-sidebar.html">Мехатроніки, БЖ та упр. якістю</a></li>
-                            <li><a href="teachers.html">Тракторів і автомобілів</a></li>
-                            <li><a href="event.html">Оптимізації технологічних систем</a></li>
-                            <li><a href="blog-left-sidebar.html">Сільськогосподарських машин та інжинерії тваринництва</a></li>
+                            <li><a href="https://biotechuniv.edu.ua/fakulteti-instituti/faculty-of-mechanotronics-and-engineering/kafedra-mechatronics-and-machine-parts/">Мехатроніки, БЖ та упр. якістю</a></li>
+                            <li><a href="https://biotechuniv.edu.ua/fakulteti-instituti/faculty-of-mechanotronics-and-engineering/kafedra-traktoriv-i-avtomobiliv/">Тракторів і автомобілів</a></li>
+                            <li><a href="https://biotechuniv.edu.ua/fakulteti-instituti/faculty-of-mechanotronics-and-engineering/kafedra-optimizatsiyi-tehnologichnih-sistem-v-roslinnitstvi/">Оптимізації технологічних систем</a></li>
+                            <li><a href="https://biotechuniv.edu.ua/fakulteti-instituti/faculty-of-mechanotronics-and-engineering/kafedra-silskogospodarskih-mashin/">Сільськогосподарських машин та інжинерії тваринництва</a></li>
                         </ul>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                         <h4 class="footer-title">{{__('Корисні посилання')}}</h4>
                         <ul class="link-list">
                             <li><a href="{{ route('home') }}">Home Page</a></li>
-                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="{{ route('home') }}">FAQs</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
                         </ul>
@@ -61,7 +61,7 @@
                         <li><a href="https://www.facebook.com/profile.php?id=100075522477800"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="https://t.me/agromaster_info"><i class="fab fa-telegram-plane"></i></a></li>
                         <li><a href="https://www.instagram.com/agromaster.info"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+{{--                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>--}}
                     </ul>
                 </div>
                 <div class="footer-menu">
