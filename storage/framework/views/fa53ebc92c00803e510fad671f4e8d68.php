@@ -5,14 +5,14 @@
             <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
                 <div class="header-top-left mt-2">
                     <ul class="header-meta">
-                        <li><a href="mailto://{{ config('app.email') }}">{{ config('app.email') }}</a></li>
+                        <li><a href="mailto://<?php echo e(config('app.email')); ?>"><?php echo e(config('app.email')); ?></a></li>
                     </ul>
                 </div>
                 <div class="header-top-right mt-2">
                     <div class="header-link">
                         <a class="notice" href="notice.html">Notice</a>
-                        <a class="login" href="{{route('login')}}">Login</a>
-                        <a class="login" href="{{route('register')}}">Register</a>
+                        <a class="login" href="<?php echo e(route('login')); ?>">Login</a>
+                        <a class="login" href="<?php echo e(route('register')); ?>">Register</a>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3">
                     <div class="header-logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('images/logo.svg') }}" alt=""></a>
+                        <a href="<?php echo e(route('home')); ?>"><img src="<?php echo e(asset('images/logo.svg')); ?>" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-7 position-static">
@@ -32,12 +32,12 @@
                     <nav class="nav-menus-wrapper">
                         <ul class="nav-menu">
                             <li>
-                                <a href="{{ route('home') }}">Home</a>
+                                <a href="<?php echo e(route('home')); ?>">Home</a>
                             </li>
                             <li>
-                                <a href="{{ route('admission') }}">{{ __('Вступ') }}</a>
+                                <a href="<?php echo e(route('admission')); ?>"><?php echo e(__('Вступ')); ?></a>
                                 <ul class="nav-dropdown nav-submenu">
-                                    <li><a href="{{ route('admission.confirmation') }}">{{ __('Підтвердження вступу') }}</a></li>
+                                    <li><a href="<?php echo e(route('admission.confirmation')); ?>"><?php echo e(__('Підтвердження вступу')); ?></a></li>
                                 </ul>
                             </li>
                             <li>
@@ -98,3 +98,4 @@
     </div>
 </header>
 <!--====== Header Ends ======-->
+<?php /**PATH Z:\Laragon-Server\www\laravel-11\resources\views/agromaster/header.blade.php ENDPATH**/ ?>

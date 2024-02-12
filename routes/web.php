@@ -6,6 +6,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\Agromaster\IndexController::class, 'index'])->name('home');
 
+Route::get('/admission', [\App\Http\Controllers\Agromaster\AdmissionController::class, 'admission'])->name('admission');
+Route::get('/admission/confirmation', [\App\Http\Controllers\Agromaster\AdmissionController::class, 'confirmation'])->name('admission.confirmation');
+
+
 Route::get('/admin', [\App\Http\Controllers\Admin\IndexController::class, 'index'])->name('admin');
 
 

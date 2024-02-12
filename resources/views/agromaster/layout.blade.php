@@ -75,7 +75,7 @@
     <script src="{{ asset('js/plugins/wow.min.js') }}"></script>
     <script src="{{ asset('js/plugins/ajax-contact.js') }}"></script>
 
-{{--    <script src="{{ asset('js/plugin.min.js') }}"></script>--}}
+{{--    <script src="{{ assets('js/plugin.min.js') }}"></script>--}}
 
     <!--====== Main Activation  js ======-->
     <script src="{{ asset('js/main.js') }}"></script>
