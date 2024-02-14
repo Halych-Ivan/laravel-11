@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Agromaster;
 
 use App\Http\Controllers\Controller;
+use Illuminate\View\View;
 
 
 class IndexController extends Controller
@@ -22,7 +23,7 @@ class IndexController extends Controller
     }
 
 
-    public function index()
+    public function index(): View
     {
         $sliders = array();
         $sliders[0] = [
@@ -112,6 +113,13 @@ class IndexController extends Controller
 
 
         return view('agromaster.index', compact('sliders', 'blog', 'friends', 'counter', 'campus', 'courses'))->with(['meta' => $this->meta]);
+    }
+
+    public function contact(): View
+    {
+        $banner = ['title' => 'Контакти', 'image' => 'images/page-banner-a.jpg'];
+
+        return view('agromaster.contact', compact('banner'))->with(['meta' => $this->meta]);
     }
 
 }
